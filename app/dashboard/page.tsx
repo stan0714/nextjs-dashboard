@@ -1,8 +1,15 @@
 import { Card } from '@/app/dashboard/cards';
+import { Suspense } from 'react';
+import CardWrapper from '@/app/dashboard/cards';
 import RevenueChart from '@/app/dashboard/revenue-chart';
 import LatestInvoices from '@/app/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
 import { fetchRevenue, fetchLatestInvoices,fetchCardData } from '@/app/lib/data';
+import {
+  RevenueChartSkeleton,
+  LatestInvoicesSkeleton,
+  CardsSkeleton,
+} from '@/app/ui/skeletons';
 
  
 
@@ -17,16 +24,16 @@ export default async function Page() {
     totalPaidInvoices,
     totalPendingInvoices,
   } = await fetchCardData(); // wait for fetchLatestInvoices() to finish
-  console.log(revenue);
+  //console.log(revenue);
   return (
     <main>
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
         Dashboard
       </h1>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <Card title="Collected" value={totalPaidInvoices} type="collected" /> 
-       <Card title="Pending" value={totalPendingInvoices} type="pending" /> 
-       <Card title="Total Invoices" value={numberOfInvoices} type="invoices" />
+      <Suspense fallback={<CardsSkeleton />}>
+          <CardWrapper />
+        </Suspense>
         <Card
           title="Total Customers"
           value={numberOfCustomers}
@@ -34,8 +41,12 @@ export default async function Page() {
         /> 
       </div>
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
-        <RevenueChart revenue={revenue}  />
-        <LatestInvoices latestInvoices={latestInvoices} />
+      <Suspense fallback={<RevenueChartSkeleton />}>
+          <RevenueChart  revenue={revenue}  />
+        </Suspense>
+        <Suspense fallback={<LatestInvoicesSkeleton />}>
+        <LatestInvoices  />
+        </Suspense>
       </div>
     </main>
   );
