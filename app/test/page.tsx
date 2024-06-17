@@ -59,6 +59,43 @@ function HeroComponent() {
   );
 }
 
+function SectionTwoComponent() {
+  return (  
+    
+
+    <section className="section section-no-background section-text-light section-center border-0 mt-0 mb-0 py-5" id="main">
+    <div className="container py-5">
+        <div className="row px-1 px-lg-5 px-md-5">
+            <div className="col-12">
+                <div className="animated-icon animated fadeIn" >
+                  <!--?xml version="1.0" encoding="UTF-8"?-->
+<svg id="icon_131718603927709" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.06 31.5" data-filename="double_quotes.svg" width="40" height="40" className="">
+  <defs>
+    <style>
+      .uuid-c7102e16-d9db-41ba-ab04-4e2a8f2d8a3c {
+        fill: #e76751;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path className="uuid-c7102e16-d9db-41ba-ab04-4e2a8f2d8a3c" d="m37.46,0c-5.46,1.79-16.39,7.29-16.39,20.77,0,2.2,0,10.73,7.06,10.73,3.6,0,7.06-2.89,7.06-7.29,0-3.44-2.27-7.02-7.06-7.02-1.2,0-1.87-.69-1.87-2.06,0-1.24.8-3.03,2.27-4.95,2-2.89,5.46-5.23,10.53-7.15l-1.6-3.03Zm-21.07,0C10.93,1.79,0,7.29,0,20.77c0,2.2,0,10.73,7.06,10.73,3.6,0,7.06-2.89,7.06-7.29,0-3.44-2.27-7.02-7.06-7.02-1.2,0-1.87-.69-1.87-2.06,0-1.24.8-3.03,2.27-4.95,2-2.89,5.46-5.23,10.53-7.15l-1.6-3.03Z" style="stroke-dasharray: 181, 183; stroke-dashoffset: 0;"></path>
+<style>#icon_131718603927709 path, #icon_131718603927709 line, #icon_131718603927709 rect, #icon_131718603927709 circle, #icon_131718603927709 polyline { stroke: #EBD7BF; fill:#EBD7BF}</style></svg></div>
+
+                <h1 className="text-color-tertiary font-weight-medium mt-5 mb-3 title-tag-ls fst-italic">
+                    Beyond陪伴您<br className="hidden-sm-up">找到心中的自己
+                </h1>
+                <h3 className="font-weight-bold line-height-5 pt-5">用心，認真看待每一個人，<br>是<span className="text-color-tertiary px-1">Beyond</span>堅持的專業精神。</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+  );
+}
+
 
 export default async function Page() {
   const revenue = await fetchRevenue();
@@ -74,6 +111,7 @@ export default async function Page() {
     <main>
       <HeaderComponent/>
       <HeroComponent/>
+      <SectionTwoComponent/>
     </main>
   );
 }
