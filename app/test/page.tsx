@@ -23,16 +23,31 @@ function HeaderComponent() {
         <span className="ml-3 text-xl">力康運動醫學機構</span>
       </a>
       <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a className="mr-5 hover:text-gray-900">First Link</a>
-        <a className="mr-5 hover:text-gray-900">Second Link</a>
-        <a className="mr-5 hover:text-gray-900">Third Link</a>
-        <a className="mr-5 hover:text-gray-900">Fourth Link</a>
+      <li className="group  relative dropdown  px-4 text-black-500 hover:text-blue-700 cursor-pointer  hover:font-bold text-base uppercase tracking-wide">
+      <a className="mr-5 hover:text-gray-900">各院資訊</a>
+      <div className="group-hover:block dropdown-menu absolute hidden h-auto">
+      <ul className="top-0 w-48 bg-white shadow px-6 py-8">
+            <li className="py-1"><a className="block text-blue-500 font-bold text-base uppercase hover:text-blue-700 cursor-pointer">內湖力康復健科診所</a></li>
+            <li className="py-1"><a className="block text-blue-500 font-bold text-base uppercase hover:text-blue-700 cursor-pointer">汐止力康復健科診所</a></li>
+            <li className="py-1"><a className="block text-blue-500 font-bold text-base uppercase hover:text-blue-700 cursor-pointer">萬隆力康復健科診所</a></li>
+            <li className="py-1"><a className="block text-blue-500 font-bold text-base uppercase hover:text-blue-700 cursor-pointer">天母力康診所</a></li>
+            <li className="py-1"><a className="block text-blue-500 font-bold text-base uppercase hover:text-blue-700 cursor-pointer">內湖力康運動醫學/運動表現中心</a></li>
+            <li className="py-1"><a className="block text-blue-500 font-bold text-base uppercase hover:text-blue-700 cursor-pointer">汐止力康運動醫學/運動表現中心</a></li>
+            <li className="py-1"><a className="block text-blue-500 font-bold text-base uppercase hover:text-blue-700 cursor-pointer">天母力康運動醫學/運動表現中心</a></li>
+            <li className="py-1"><a className="block text-blue-500 font-bold text-base uppercase hover:text-blue-700 cursor-pointer">足部力學專科</a></li>
+        </ul>
+        </div>
+    </li>
+        <a className="mr-5 hover:text-gray-900">關於立康</a>
+        <a className="mr-5 hover:text-gray-900">各院資訊</a>
+        <a className="mr-5 hover:text-gray-900">衛教精選</a>
       </nav>
-      <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+
+      {/* <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
-      </button>
+      </button> */}
     </div>
   </header>
   );
@@ -63,32 +78,49 @@ function SectionTwoComponent() {
   return (  
     
 
-    <section className="section section-no-background section-text-light section-center border-0 mt-0 mb-0 py-5" id="main">
-    <div className="container py-5">
-        <div className="row px-1 px-lg-5 px-md-5">
-            <div className="col-12">
-                <div className="animated-icon animated fadeIn" >
-                  <!--?xml version="1.0" encoding="UTF-8"?-->
-<svg id="icon_131718603927709" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.06 31.5" data-filename="double_quotes.svg" width="40" height="40" className="">
-  <defs>
-    <style>
-      .uuid-c7102e16-d9db-41ba-ab04-4e2a8f2d8a3c {
-        fill: #e76751;
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <path className="uuid-c7102e16-d9db-41ba-ab04-4e2a8f2d8a3c" d="m37.46,0c-5.46,1.79-16.39,7.29-16.39,20.77,0,2.2,0,10.73,7.06,10.73,3.6,0,7.06-2.89,7.06-7.29,0-3.44-2.27-7.02-7.06-7.02-1.2,0-1.87-.69-1.87-2.06,0-1.24.8-3.03,2.27-4.95,2-2.89,5.46-5.23,10.53-7.15l-1.6-3.03Zm-21.07,0C10.93,1.79,0,7.29,0,20.77c0,2.2,0,10.73,7.06,10.73,3.6,0,7.06-2.89,7.06-7.29,0-3.44-2.27-7.02-7.06-7.02-1.2,0-1.87-.69-1.87-2.06,0-1.24.8-3.03,2.27-4.95,2-2.89,5.46-5.23,10.53-7.15l-1.6-3.03Z" style="stroke-dasharray: 181, 183; stroke-dashoffset: 0;"></path>
-<style>#icon_131718603927709 path, #icon_131718603927709 line, #icon_131718603927709 rect, #icon_131718603927709 circle, #icon_131718603927709 polyline { stroke: #EBD7BF; fill:#EBD7BF}</style></svg></div>
 
-                <h1 className="text-color-tertiary font-weight-medium mt-5 mb-3 title-tag-ls fst-italic">
-                    Beyond陪伴您<br className="hidden-sm-up">找到心中的自己
-                </h1>
-                <h3 className="font-weight-bold line-height-5 pt-5">用心，認真看待每一個人，<br>是<span className="text-color-tertiary px-1">Beyond</span>堅持的專業精神。</h3>
-            </div>
-        </div>
+<section className=" justify-center items-center bg-white text-gray-600 body-font">
+  <div className="container px-5 py-24 mx-auto">
+    <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+
+      <div className="text-3xl font-extrabold text-black  sm:text-4xl">
+      <h2 className="text-color-tertiary font-weight-medium mt-5 mb-3 title-tag-ls fst-italic"> Beyond陪伴您 找到心中的自己</h2>
+      <p className="font-weight-bold line-height-5 pt-5">用心，認真看待每一個人，是<span className="text-color-tertiary px-1">Beyond</span>堅持的專業精神。</p>
+      </div>
+      <span className="inline-block h-1 w-10 rounded bg-blue-500 mt-8 mb-6"></span>
+
+
     </div>
+  </div>
 </section>
+
+  );
+}
+
+function SectionThreeComponent() {
+  return (  
+    
+
+
+<section className=" justify-center items-center bg-white text-gray-600 body-font">
+  <div className="container px-5 py-24 mx-auto">
+    <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+
+      <div className="text-3xl font-extrabold text-black  sm:text-4xl">
+      <h2 className="text-color-tertiary font-weight-medium mt-5 mb-3 title-tag-ls fst-italic"> Beyond陪伴您 找到心中的自己</h2>
+      <p className="font-weight-bold line-height-5 pt-5">用心，認真看待每一個人，是<span className="text-color-tertiary px-1">Beyond</span>堅持的專業精神。</p>
+      </div>
+      <span className="inline-block h-1 w-10 rounded bg-blue-500 mt-8 mb-6"></span>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
 
 
 
