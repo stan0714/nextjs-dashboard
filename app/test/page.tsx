@@ -10,7 +10,7 @@ import {
   LatestInvoicesSkeleton,
   CardsSkeleton,
 } from '@/app/ui/skeletons';
-import  Navbar  from '@/app/ui/navbar';
+import   Navbar  from '@/app/ui/navbar';
 
 
 
