@@ -2,16 +2,12 @@
 
 import React, { useState } from 'react';
 
-
-
-
-
-function NavLink({to, children}) {
-  return 
-  <a href={to} className={`mx-4`}>
-      {children}
-  </a>
-}
+// function NavLink({to, children}) {
+//   return 
+//   <a href={to} className={`mx-4`}>
+//       {children}
+//   </a>
+// }
 
 
 
